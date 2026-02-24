@@ -90,13 +90,42 @@ export default function RootLayout({ children }) {
               name: "Angelin Care",
               url: "https://angelincare.in",
               telephone: "+91 70121 46398",
-              address: {
-                "@type": "PostalAddress",
-                addressCountry: "IN",
-                addressRegion: "Kerala",
+              areaServed: {
+                "@type": "State",
+                name: "Kerala",
               },
               description:
-                "Home nursing, baby care, hospital bystander and domestic staffing services across Kerala.",
+                "Managed home nursing, hospital bystander, baby care and domestic staffing services across Kerala.",
+              makesOffer: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Home Nursing Services",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Hospital Bystander Support",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Baby Care Services",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Domestic Staffing Services",
+                  },
+                },
+              ],
             }),
           }}
         />

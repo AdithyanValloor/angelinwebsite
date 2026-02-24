@@ -44,10 +44,10 @@ export default function Header() {
           <Link
             href="/"
             onClick={handleClick}
-            className="group flex items-center"
+            className="group flex items-center gap-1"
           >
             <div
-              className="w-20 h-20 bg-contain bg-no-repeat select-none"
+              className="w-15 h-15 bg-contain bg-no-repeat select-none"
               style={{ backgroundImage: "url('/angelin.png')" }}
               onContextMenu={(e) => e.preventDefault()}
             />
