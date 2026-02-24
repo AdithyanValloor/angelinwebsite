@@ -38,15 +38,18 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-white/20 shadow">
-      <div className="max-w-screen-xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" onClick={handleClick} className="group flex items-center gap-2">
-            <Image
-            src="/logo.png"
-            alt="Angelin care logo"
-            width={50}
-            height={50}
+          <Link
+            href="/"
+            onClick={handleClick}
+            className="group flex items-center"
+          >
+            <div
+              className="w-20 h-20 bg-contain bg-no-repeat select-none"
+              style={{ backgroundImage: "url('/angelin.png')" }}
+              onContextMenu={(e) => e.preventDefault()}
             />
             <div className="flex flex-col leading-tight">
               <span className="text-2xl font-semibold text-teal-700 tracking-tight group-hover:text-teal-800 transition-colors">
@@ -57,7 +60,6 @@ export default function Header() {
               </span>
             </div>
           </Link>
-
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => {
@@ -66,7 +68,7 @@ export default function Header() {
                 <Link
                   key={link.path}
                   href={link.path}
-                  onClick={handleClick} 
+                  onClick={handleClick}
                   className={`relative text-sm font-medium transition-colors ${
                     active
                       ? "text-teal-700"
