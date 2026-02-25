@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
-import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -37,7 +36,7 @@ export default function Header() {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-lg border-b border-white/20 shadow">
+    <header className="fixed top-0 z-50 bg-white/70 backdrop-blur-lg border-b w-full border-white/20 shadow">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}

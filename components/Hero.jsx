@@ -6,16 +6,18 @@ import { IoCall } from "react-icons/io5";
 export default function Hero() {
   return (
     <>
-      {/* Fixed Background Layer (REAL fixed) */}
+      {/* Fixed Background Layer (Stable Version) */}
       <div
-        className="fixed inset-0 -z-30 bg-cover bg-[40%_30%] scale-105"
+        // className="fixed top-0 mt-20 left-0 w-screen h-[100svh] -z-30 bg-cover bg-[40%_30%]"
+        className="fixed top-0 left-0 w-screen h-[100svh] -z-30 bg-cover bg-[40%_30%]"
         style={{
-          backgroundImage: "url('/homenurse.png')",
+          backgroundImage: "url('/heroImage.webp')",
         }}
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* <section className="relative  pt-20 flex items-center overflow-hidden"> */}
+      <section className="relative h-[100svh] flex items-center overflow-hidden pt-20">
 
         {/* Overlay */}
         <div className="absolute inset-0 -z-20 bg-gradient-to-br from-black/85 via-black/65 to-black/40" />

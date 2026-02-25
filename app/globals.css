@@ -5,6 +5,10 @@ body {
   font-family: var(--font-poppins);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 @layer utilities {
   /* Custom scrollbar */
   ::-webkit-scrollbar {
